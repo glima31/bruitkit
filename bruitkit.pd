@@ -1,0 +1,3 @@
+#N canvas 827 239 734 565 12;
+#X declare -path abstractions;
+#X obj 48 46 declare -path abstractions;
