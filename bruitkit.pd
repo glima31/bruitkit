@@ -1,3 +1,9 @@
 #N canvas 827 239 734 565 12;
 #X declare -path abstractions;
 #X obj 48 46 declare -path abstractions;
+#X obj 48 150 bk.sampler~;
+#X obj 145 492 dac~;
+#X obj 48 85 bng 25 250 50 0 empty empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 1 0;
