@@ -21,8 +21,8 @@
 #X obj 404 806 vline~;
 #X obj 30 101 bng 25 250 50 0 \$0-start-playback empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737;
 #X text 64 100 Play;
-#X obj 192 427 r \$0-start-playback;
-#X obj 205 516 f;
+#X obj 160 430 r \$0-start-playback;
+#X obj 205 512 f;
 #X msg 205 629 0 \, 1 \$1;
 #X obj 317 466 expr ($f1 / $f2) * 1000;
 #X obj 317 386 t f f;
@@ -31,14 +31,14 @@
 #X obj 404 945 snapshot~;
 #X obj 205 560 t f f;
 #X obj 308 585 delay;
-#X obj 192 472 t b b;
+#X obj 89 466 t b b;
 #X msg 338 721 0;
 #X msg 251 861 0;
 #X obj 308 622 t b b b;
 #X msg 323 759 0;
 #X obj 740 763 outlet~;
 #X obj 815 763 outlet~;
-#X obj 89 427 inlet;
+#X obj 89 386 inlet;
 #X text 537 77 \$0-array doesn't work in message objects \, so we need to create the array name on load and pass it to the [read -resize ] object, f 47;
 #X text 467 805 <--- advance audio playback and the playhead, f 40;
 #X text 358 584 <--- wait for the duration of the audio file;
