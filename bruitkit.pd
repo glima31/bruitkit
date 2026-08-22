@@ -24,6 +24,7 @@
 #X floatatom 359 826 5 0 0 0 - - - 0;
 #X obj 564 325 bk.sampler~;
 #X obj 662 782 dac~;
+#X obj 908 632 bk.sampler~;
 #X connect 1 0 2 0;
 #X connect 1 0 18 0;
 #X connect 1 1 2 1;
