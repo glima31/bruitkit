@@ -1,4 +1,4 @@
-#N canvas 827 239 734 565 12;
+#N canvas 827 239 1441 1193 12;
 #X obj 654 27 r \$0-load-sample;
 #X obj 654 93 openpanel;
 #X obj 30 56 bng 25 250 50 0 \$0-load-sample empty empty 0 -10 0 10 #e4e4e4 #4d4d4d #373737;
@@ -51,7 +51,7 @@
 #X obj 30 478 expr $f1 * $f1;
 #X obj 30 623 *;
 #X obj 255 859 *~;
-#X obj 33 339 hsl 194 17 0 1 0 1 \$0-level empty Level\ Trim -2 -8 0 10 #e4e4e4 #4d4d4d #373737 12700 1;
+#X obj 36 339 hsl 194 17 0 1 0 1 \$0-level empty Level\ Trim -2 -8 0 10 #e4e4e4 #4d4d4d #373737 19300 1;
 #X obj 183 478 r \$0-level;
 #X text 101 631 advance audio playback and the playhead --->, f 21;
 #X connect 0 0 1 0;
