@@ -36,9 +36,9 @@
 #X text 1068 351 NOTE: to play at different velocities \, click on different part of the same key, f 50;
 #X text 198 112 play at full velocity;
 #X text 19 98 random velocity values (0.2-1.0), f 18;
-#X connect 1 0 2 0 32.................V.........fE.........bC....;
-#X connect 1 0 2 1 32.................V.....A...fE....P....bC....;
-#X connect 1 0 16 0 32.................V....vE...fE....bA...bC....;
+#X connect 1 0 2 0 32.................V.........fE.........rA....;
+#X connect 1 0 16 0 32.................K....vE...vB....bA...rA....;
+#X connect 1 0 2 1 32.................S.....A...vD....P....rA....;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
