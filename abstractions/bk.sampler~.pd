@@ -170,7 +170,7 @@
 #X obj 1478 751 pack f f f;
 #X msg 1478 789 0 \, 1 \$1 \, 0 \$2 \$3;
 #X floatatom 1217 698 5 0 0 3 Hold\ (ms) - - 24;
-#X text 1197 1038 AHD Envelope;
+#X text 1218 1039 AHD Envelope;
 #X obj 176 503 hsl 157 22 0 0.95 0 0 \$0-hold empty Hold -2 -8 0 10 #333333 #eeeeee #111111 0 1;
 #X floatatom 340 503 5 0 0 1 - \$0-hold - 16;
 #X msg 16 513 0.8;
