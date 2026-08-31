@@ -34,6 +34,9 @@
 #X text 198 112 play at full velocity;
 #X text 19 98 random velocity values (0.2-1.0), f 18;
 #X obj 896 1150 dac~ 9 10;
+#X floatatom 200 73 5 0 0 0 - - - 0;
+#X msg 397 353 -0.5;
+#X text 293 304 these velocity values should be clamped to 0 and 1 \, respectively:, f 29;
 #X connect 1 0 33 1;
 #X connect 1 0 33 0;
 #X connect 1 0 2 0;
@@ -79,3 +82,4 @@
 #X connect 27 0 28 0 32.................N.........fC.........rA....;
 #X connect 28 0 20 0 64.................T....r7+++OE....K++++WA....u++++U....v6+++eS++++q7+++2z++++J++++48+++C;
 #X connect 28 1 20 1 48.................h....35+++uH....t9+++C1++++H++++f8+++Ox+++ed++++;
+#X connect 35 0 1 0 32.................P....f1+++OD....n8+++CE....;

@@ -3,8 +3,8 @@
 #X obj 173 158 cnv 15 219 140 empty empty empty 20 12 0 14 #526969 #111111 0;
 #X obj 173 62 bng 25 250 50 0 \$0-load-sample empty Load\ File 0 -10 0 10 #333333 #eeeeee #111111;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array \$0-array 32371 float 2;
-#X coords 0 1 32371 -1 220 140 1;
+#X array \$0-array 31244 float 2;
+#X coords 0 1 31244 -1 220 140 1;
 #X restore 173 158 graph;
 #X obj 541 805 *~;
 #X obj 176 304 hsl 214 20 0 1 0 0 \$0-start-offset \$0-playhead empty -2 -8 0 10 #526969 #eeeeee #111111 0 1;
@@ -141,7 +141,7 @@
 #X connect 29 1 1 0 32.................M....Hq+++eC....x5+++OB....;
 #X restore 541 680 pd player;
 #X obj 541 147 f 1;
-#X text 581 146 <--- if the inlet receives a bang \, velocity = 1 if it receives a float \, that value is the velocity, f 12;
+#X text 581 146 <--- if the inlet receives a bang \, velocity = 1 if it receives a float \, that value is the velocity, f 18;
 #X obj 1081 777 scope~ 366 255 128 3 256 -0.2 1.2 0 0 0 0 238 238 238 51 51 51 105 105 105 0 empty;
 #X obj 1478 839 vline~;
 #X obj 1478 1025 *~;
@@ -189,6 +189,9 @@
 #X obj 1987 251 r \$0-length-floor;
 #X text 1589 788 <--- AHD ENVELOPE \; \; \$1 attack \$2 decay_len \$3 decay_start \; \; velocity: attack is 0ms at velocity=1 and reaches the ceiling (\$0-attack) at mininum. envelope length equals full playback duration at velocity=1 and shrinks towards the length floor (\$0-length-floor) on lower velocities \, so soft hits stop ringing before playback does. \; \; \$0-hold: splits the time after the attack stage. at \$0-hold=0 \, this is just an AD envelope., f 44;
 #X text 1844 517 ^^^ envelope_len = effective_audio_duration x (\$0-length-floor + (1 - \$0-length-floor) x velocity), f 38;
+#X obj 541 240 expr min(1\\\, max(0\\\, $f1));
+#X text 563 263 ^^^ clamp velocity to 0.0-1.0, f 23;
+#X floatatom 440 317 4 0 0 3 Velocity - - 24;
 #X connect 4 0 7 0;
 #X connect 6 0 13 0;
 #X connect 7 0 17 0 32.................5++++C....f9++++.....HD....;
@@ -220,7 +223,7 @@
 #X connect 45 1 73 0;
 #X connect 46 0 45 0 32.................f..........H.........TA....;
 #X connect 47 0 4 0 32.................f++++C.....3++++.....nF....;
-#X connect 48 0 59 0 32.................UB........Pk.........bI....;
+#X connect 48 0 97 0;
 #X connect 51 0 52 0 32.................AA........PP.........bJ....;
 #X connect 51 0 52 1 32.................LB...r.....i....K....bJ....;
 #X connect 52 0 50 0 48.................S....L9++++D....i++++mt+++Oc9+++o6+++Sm+++u89+++;
@@ -271,4 +274,6 @@
 #X connect 87 2 84 0 32.................v....La....L....yF....D....;
 #X connect 87 3 85 1 32.................6....TG...vN....0A...nG....;
 #X connect 94 0 56 2 32.................lB........fo.........rM....;
+#X connect 97 0 59 0;
+#X connect 97 0 99 0 32.................c....v4+++eG....b9+++qC....;
 #X coords 0 0 1 1 273 545 1 146 41;
