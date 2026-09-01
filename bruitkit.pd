@@ -27,7 +27,7 @@
 #X text 1068 351 NOTE: to play at different velocities \, click on different part of the same key, f 50;
 #X text 165 112 play at full velocity;
 #X text 19 98 random velocity values (0.2-1.0), f 18;
-#X obj 646 953 dac~ 9 10;
+#X obj 884 953 dac~ 9 10;
 #X msg 576 330 -0.5;
 #X text 492 283 these velocity values should be clamped to 0 and 1 \, respectively:, f 29;
 #X msg 240 289 0.75 -1;
@@ -40,10 +40,10 @@
 #X text 240 241 with panning. left \, centered \, right (respectively):, f 24;
 #X text 432 112 fixed values with no panning:;
 #X text 809 430 C: pan left \; C#: center (ignore spread) \; D: pan right;
-#X connect 1 0 27 0 32.................W....jL...vE....IC...TD....;
 #X connect 1 0 2 0;
-#X connect 1 1 27 1 32.................i.........vH.........TD....;
+#X connect 1 0 27 0 32.................W....ba...vE....2F...TD....;
 #X connect 1 1 2 1 32.................i....3h++++H....t3+++WD....;
+#X connect 1 1 27 1 32.................i.........vH.........TD....;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
