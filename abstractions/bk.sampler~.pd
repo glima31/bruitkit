@@ -3,8 +3,8 @@
 #X obj 1775 182 cnv 15 344 140 empty empty empty 20 12 0 14 #526969 #111111 0;
 #X obj 1719 137 bng 25 250 50 0 \$0-load-sample empty Load\ File 0 -10 0 10 #333333 #eeeeee #111111;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array \$0-array 61152 float 2;
-#X coords 0 1 61152 -1 345 140 1;
+#X array \$0-array 31244 float 2;
+#X coords 0 1 31244 -1 345 140 1;
 #X restore 1775 182 graph;
 #X obj 736 1264 *~;
 #X obj 1778 331 hsl 339 21 0 1 0 0 \$0-start-offset \$0-playhead empty -2 -8 0 10 #526969 #eeeeee #111111 0 1;
@@ -218,7 +218,7 @@
 #X text 1707 333 Spread, f 7;
 #X obj 1707 182 knob 50 0 1 0 1 \$0-level empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X text 1707 231 Level, f 7;
-#X obj 1707 374 knob 50 200 5000 0 1500 \$0-brightness-floor empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 200 empty 0 6 -15 0 1 0 0 0 0;
+#X obj 1707 374 knob 50 200 5000 1 1500 \$0-brightness-floor empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 200 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 1810 374 knob 50 0 20 0 8 \$0-attack empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 1914 374 knob 50 0 0.95 0 0.8 \$0-hold empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 2018 374 knob 50 0.3 1 0 0.7 \$0-length-floor empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0.3 empty 0 6 -15 0 1 0 0 0 0;
