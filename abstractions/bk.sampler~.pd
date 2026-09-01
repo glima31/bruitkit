@@ -195,7 +195,7 @@
 #X obj 380 1607 *~;
 #X obj 380 1728 outlet~;
 #X msg 1634 297 0;
-#X msg 134 1025 0, f 3;
+#X msg 134 1025 0;
 #X text 181 1605 <--- apply the pan gains --->;
 #X text 174 1023 <--- center the pan. bare floats and bangs don't specify a hand \, so they play centered, f 14;
 #X text 375 1165 <--- pan_position = hand x \$0-spread \; hand: -1 left \, 0 center \, 1 right;
