@@ -198,14 +198,14 @@
 #X msg 487 464 1;
 #X text 538 315 bng: play at full velocity (no panning) \; f: velocity (no panning) \; f f: velocity + hand, f 31;
 #X obj 485 515 t f b;
-#X obj 2162 181 vu 19 170 empty empty -1 -8 0 10 #404040 #111111 0 0;
+#X obj 2162 181 vu 19 160 empty empty -1 -8 0 10 #404040 #111111 0 0;
 #X symbolatom 1970 139 24 0 0 0 - - - 16;
-#X obj 2186 181 vu 19 170 empty empty -1 -8 0 10 #404040 #111111 1 0;
+#X obj 2186 181 vu 19 160 empty empty -1 -8 0 10 #404040 #111111 1 0;
 #X obj 2087 282 knob 50 0 1 0 0 \$0-spread empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X text 2087 332 Spread, f 7;
-#X obj 2087 191 knob 50 -40 0 0 0 \$0-level empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
+#X obj 2087 191 knob 50 -40 0 0 0 \$0-level empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 -40 empty 0 6 -15 0 1 0 0 0 0;
 #X text 2092 241 Level, f 7;
-#X obj 1718 372 knob 50 0 1 0 0 \$0-tone-depth empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 1 empty 0 6 -15 0 1 0 0 0 0;
+#X obj 1718 372 knob 50 0 1 0 0 \$0-tone-depth empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 1939 372 knob 50 0 20 0 8 \$0-attack empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 2050 372 knob 50 0 0.95 0 0.8 \$0-hold empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0 empty 0 6 -15 0 1 0 0 0 0;
 #X obj 2161 372 knob 50 0.3 1 0 0.7 \$0-length-floor empty #333333 #696969 #EEEEEE 0 0 0 0 1 270 0 0 0.3 empty 0 6 -15 0 1 0 0 0 0;
