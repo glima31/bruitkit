@@ -1,7 +1,7 @@
 #N canvas 827 239 1441 1193 12;
-#X obj 1693 111 cnv 15 541 410 empty empty empty 20 12 0 14 #d0d3cd #111111 0;
-#X obj 1719 398 cnv 15 493 105 empty empty VELOCITY\ RESPONSE 0 12 0 14 #656565 #eeeeee 0;
-#X obj 1719 181 cnv 15 344 167 empty empty empty 20 12 0 14 #526969 #111111 0;
+#X obj 1693 111 cnv 15 542 392 empty empty empty 20 12 0 14 #d0d3cd #111111 0;
+#X obj 1719 398 cnv 15 493 105 empty empty VELOCITY\ RESPONSE\ ---------------------------------------------------------- 0 12 0 14 #d0d3cd #111111 0;
+#X obj 1719 181 cnv 15 344 167 empty empty empty 20 12 0 14 #42a3c6 #111111 0;
 #X obj 1762 139 bng 25 250 50 0 \$0-load-sample empty Load 0 -10 0 10 #333333 #eeeeee #111111;
 #N canvas 0 0 450 250 (subpatch) 0;
 #X array \$0-array 61152 float 2;
@@ -219,11 +219,11 @@
 #X obj 1962 647 r \$0-attack-depth;
 #X text 1681 844 ^^^ attack_len = \$0-attack-depth x (1 - velocity)^2, f 38;
 #X text 1753 1117 <--- AHD ENVELOPE \; \; \$1 attack \$2 decay_len \$3 decay_start \; \; velocity: attack is 0ms at velocity=1 and reaches the ceiling (\$0-attack-depth) at mininum. envelope length equals full playback duration at velocity=1 and shrinks towards the length floor (\$0-length-floor) on lower velocities \, so soft hits stop ringing before playback does. \; \; \$0-hold: splits the time after the attack stage. at \$0-hold=0 \, this is just an AD envelope., f 44;
-#X obj 1727 475 cnv 15 34 17 empty empty Tone 0 12 0 14 #656565 #eeeeee 0;
-#X obj 2163 475 cnv 15 34 17 empty empty Length 0 12 0 14 #656565 #eeeeee 0;
+#X obj 1727 475 cnv 15 34 17 empty empty Tone 0 12 0 14 #d0d3cd #111111 0;
+#X obj 2163 475 cnv 15 34 17 empty empty Length 0 12 0 14 #d0d3cd #111111 0;
 #X obj 2078 369 cnv 15 44 19 empty empty Spread 0 12 0 14 #d0d3cd #111111 0;
-#X obj 1875 475 cnv 15 34 17 empty empty Start 0 12 0 14 #656565 #eeeeee 0;
-#X obj 2023 475 cnv 15 34 17 empty empty Attack 0 12 0 14 #656565 #eeeeee 0;
+#X obj 1875 475 cnv 15 34 17 empty empty Start 0 12 0 14 #d0d3cd #111111 0;
+#X obj 2023 475 cnv 15 34 17 empty empty Attack 0 12 0 14 #d0d3cd #111111 0;
 #X obj 2084 229 cnv 15 44 19 empty empty Level 0 12 0 14 #d0d3cd #111111 0;
 #X obj 2090 298 cnv 15 44 19 empty empty Hold 0 12 0 14 #d0d3cd #111111 0;
 #X connect 5 0 8 0;
@@ -337,4 +337,4 @@
 #X connect 113 0 110 1 32.................FA...bj+++uQ....G4+++iJ....;
 #X connect 116 0 102 0 48.................R....38+++uD....d++++Gz+++e.....A8+++G....PR++++;
 #X connect 117 0 39 1 32.................cA...rw+++eW....a7+++mI....;
-#X coords 0 0 1 1 544 412 1 1692 110;
+#X coords 0 0 1 1 543 396 1 1692 110;
